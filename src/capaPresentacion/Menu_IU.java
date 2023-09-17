@@ -56,9 +56,11 @@ public class Menu_IU extends javax.swing.JFrame {
         setTitle("EMPRESA X");
         setExtendedState(6);
 
-        jToolBar1.setBackground(new java.awt.Color(153, 255, 153));
+        jToolBar1.setBackground(new java.awt.Color(204, 255, 255));
         jToolBar1.setRollover(true);
 
+        btnProductos.setBackground(new java.awt.Color(204, 255, 255));
+        btnProductos.setForeground(new java.awt.Color(204, 255, 255));
         btnProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/box.png"))); // NOI18N
         btnProductos.setFocusable(false);
         btnProductos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -66,6 +68,7 @@ public class Menu_IU extends javax.swing.JFrame {
         jToolBar1.add(btnProductos);
         jToolBar1.add(jSeparator1);
 
+        btnCompras.setBackground(new java.awt.Color(204, 255, 255));
         btnCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/compra.png"))); // NOI18N
         btnCompras.setFocusable(false);
         btnCompras.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -73,6 +76,7 @@ public class Menu_IU extends javax.swing.JFrame {
         jToolBar1.add(btnCompras);
         jToolBar1.add(jSeparator2);
 
+        btnIngresos.setBackground(new java.awt.Color(204, 255, 255));
         btnIngresos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/ingresos.png"))); // NOI18N
         btnIngresos.setFocusable(false);
         btnIngresos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -80,6 +84,7 @@ public class Menu_IU extends javax.swing.JFrame {
         jToolBar1.add(btnIngresos);
         jToolBar1.add(jSeparator3);
 
+        btnEgresos.setBackground(new java.awt.Color(204, 255, 255));
         btnEgresos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/egresos.png"))); // NOI18N
         btnEgresos.setFocusable(false);
         btnEgresos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -87,6 +92,7 @@ public class Menu_IU extends javax.swing.JFrame {
         jToolBar1.add(btnEgresos);
         jToolBar1.add(jSeparator4);
 
+        btnVentas.setBackground(new java.awt.Color(204, 255, 255));
         btnVentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/venta1.png"))); // NOI18N
         btnVentas.setFocusable(false);
         btnVentas.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -94,6 +100,7 @@ public class Menu_IU extends javax.swing.JFrame {
         jToolBar1.add(btnVentas);
         jToolBar1.add(jSeparator5);
 
+        btnCaja.setBackground(new java.awt.Color(204, 255, 255));
         btnCaja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/cerrar2.png"))); // NOI18N
         btnCaja.setFocusable(false);
         btnCaja.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -111,8 +118,8 @@ public class Menu_IU extends javax.swing.JFrame {
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(escritorioLayout.createSequentialGroup()
-                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 463, Short.MAX_VALUE))
+                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 480, Short.MAX_VALUE))
         );
 
         menu_mantenimiento.setText("MANTENIMIENTO");
