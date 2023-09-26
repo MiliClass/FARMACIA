@@ -3,13 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaNegocio/UsuarioBD.java</file>
-            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaNegocio/TurnoBD.java</file>
-            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaPresentacion/TipoUsuario_IU.java</file>
-            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaNegocio/TipoUsuarioBD.java</file>
-            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaPresentacion/Turno_IU.java</file>
+            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaPresentacion/Categoria_IU.java</file>
+            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaPresentacion/Medida_IU.java</file>
+            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaPresentacion/Composicion_IU.java</file>
+            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaPresentacion/Marca_IU.java</file>
+            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaNegocio/MarcaBD.java</file>
+            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaNegocio/CategoriaBD.java</file>
+            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaNegocio/ProductoBD.java</file>
+            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaPresentacion/Producto_IU.java</file>
             <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaPresentacion/Menu_IU.java</file>
-            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaPresentacion/Usuario_IU.java</file>
+            <file>file:/C:/Users/Milagros/Documents/NetBeansProjects/FARMACIA/src/capaNegocio/MedidaBD.java</file>
         </group>
     </open-files>
 </project-private>

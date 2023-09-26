@@ -548,11 +548,21 @@ public class Turno_IU extends javax.swing.JInternalFrame {
 
     private void txtHoraInicioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtHoraInicioKeyTyped
         // TODO add your handling code here:
+        char c = evt.getKeyChar();
+        if (!(Character.isDigit(c) || c == ':')) {
+            evt.consume();
+
+        }
 
     }//GEN-LAST:event_txtHoraInicioKeyTyped
 
     private void txtHoraFinalKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtHoraFinalKeyTyped
         // TODO add your handling code here:
+        char c = evt.getKeyChar();
+        if (!(Character.isDigit(c) || c == ':')) {
+            evt.consume();
+
+        }
 
     }//GEN-LAST:event_txtHoraFinalKeyTyped
 

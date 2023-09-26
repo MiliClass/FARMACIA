@@ -274,6 +274,7 @@ public class TipoUsuario_IU extends javax.swing.JInternalFrame {
             int fila_seleccionada = tabla_reporte_TipoUsuario.getSelectedRow();
             txtCodigo.setText(tabla_reporte_TipoUsuario.getValueAt(fila_seleccionada, 0).toString());
             txtNombre.setText(tabla_reporte_TipoUsuario.getValueAt(fila_seleccionada, 1).toString());
+            txtNombre.requestFocus();
         }
     }//GEN-LAST:event_tabla_reporte_TipoUsuarioMousePressed
 
