@@ -52,6 +52,8 @@ public class Menu_IU extends javax.swing.JFrame {
         btnVentas = new javax.swing.JButton();
         jSeparator5 = new javax.swing.JToolBar.Separator();
         btnCaja = new javax.swing.JButton();
+        jSeparator7 = new javax.swing.JToolBar.Separator();
+        btnCerrar = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         menu_mantenimiento = new javax.swing.JMenu();
         menu_item_tipoUsuario = new javax.swing.JMenuItem();
@@ -80,59 +82,83 @@ public class Menu_IU extends javax.swing.JFrame {
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 687, Short.MAX_VALUE)
+            .addGap(0, 705, Short.MAX_VALUE)
         );
 
-        jToolBar1.setBackground(new java.awt.Color(204, 255, 255));
+        jToolBar1.setBackground(new java.awt.Color(65, 145, 151));
         jToolBar1.setRollover(true);
 
-        btnProductos.setBackground(new java.awt.Color(204, 255, 255));
+        btnProductos.setBackground(new java.awt.Color(65, 145, 151));
         btnProductos.setForeground(new java.awt.Color(204, 255, 255));
         btnProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/box.png"))); // NOI18N
+        btnProductos.setEnabled(false);
         btnProductos.setFocusable(false);
         btnProductos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnProductos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(btnProductos);
         jToolBar1.add(jSeparator1);
 
-        btnCompras.setBackground(new java.awt.Color(204, 255, 255));
+        btnCompras.setBackground(new java.awt.Color(65, 145, 151));
         btnCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/compra.png"))); // NOI18N
+        btnCompras.setEnabled(false);
         btnCompras.setFocusable(false);
         btnCompras.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCompras.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(btnCompras);
         jToolBar1.add(jSeparator2);
 
-        btnIngresos.setBackground(new java.awt.Color(204, 255, 255));
+        btnIngresos.setBackground(new java.awt.Color(65, 145, 151));
         btnIngresos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/ingresos.png"))); // NOI18N
+        btnIngresos.setEnabled(false);
         btnIngresos.setFocusable(false);
         btnIngresos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnIngresos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(btnIngresos);
         jToolBar1.add(jSeparator3);
 
-        btnEgresos.setBackground(new java.awt.Color(204, 255, 255));
+        btnEgresos.setBackground(new java.awt.Color(65, 145, 151));
         btnEgresos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/egresos.png"))); // NOI18N
+        btnEgresos.setEnabled(false);
         btnEgresos.setFocusable(false);
         btnEgresos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnEgresos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(btnEgresos);
         jToolBar1.add(jSeparator4);
 
-        btnVentas.setBackground(new java.awt.Color(204, 255, 255));
+        btnVentas.setBackground(new java.awt.Color(65, 145, 151));
         btnVentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/venta1.png"))); // NOI18N
+        btnVentas.setEnabled(false);
         btnVentas.setFocusable(false);
         btnVentas.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnVentas.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(btnVentas);
         jToolBar1.add(jSeparator5);
 
-        btnCaja.setBackground(new java.awt.Color(204, 255, 255));
-        btnCaja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/cerrar2.png"))); // NOI18N
+        btnCaja.setBackground(new java.awt.Color(65, 145, 151));
+        btnCaja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/caja_1.png"))); // NOI18N
+        btnCaja.setEnabled(false);
         btnCaja.setFocusable(false);
         btnCaja.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCaja.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnCaja.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCajaActionPerformed(evt);
+            }
+        });
         jToolBar1.add(btnCaja);
+        jToolBar1.add(jSeparator7);
+
+        btnCerrar.setBackground(new java.awt.Color(65, 145, 151));
+        btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/capaImagenes/cerrar2.png"))); // NOI18N
+        btnCerrar.setFocusable(false);
+        btnCerrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCerrar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnCerrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(btnCerrar);
 
         menu_mantenimiento.setText("MANTENIMIENTO");
 
@@ -204,15 +230,19 @@ public class Menu_IU extends javax.swing.JFrame {
         jMenuBar1.add(menu_mantenimiento);
 
         menu_compras.setText("COMPRAS");
+        menu_compras.setEnabled(false);
         jMenuBar1.add(menu_compras);
 
         menu_inventario.setText("INVENTARIO");
+        menu_inventario.setEnabled(false);
         jMenuBar1.add(menu_inventario);
 
         menu_ventas.setText("VENTAS");
+        menu_ventas.setEnabled(false);
         jMenuBar1.add(menu_ventas);
 
         menu_caja.setText("CAJA");
+        menu_caja.setEnabled(false);
         jMenuBar1.add(menu_caja);
 
         setJMenuBar(jMenuBar1);
@@ -228,8 +258,8 @@ public class Menu_IU extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(escritorio))
         );
 
         pack();
@@ -323,6 +353,16 @@ public class Menu_IU extends javax.swing.JFrame {
         frame.show();
     }//GEN-LAST:event_menu_item_composicionActionPerformed
 
+    private void btnCajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCajaActionPerformed
+        // TODO add your handling code here:
+       
+    }//GEN-LAST:event_btnCajaActionPerformed
+
+    private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
+        // TODO add your handling code here:
+         System.exit(0);
+    }//GEN-LAST:event_btnCerrarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -359,12 +399,13 @@ public class Menu_IU extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCaja;
-    private javax.swing.JButton btnCompras;
-    private javax.swing.JButton btnEgresos;
-    private javax.swing.JButton btnIngresos;
-    private javax.swing.JButton btnProductos;
-    private javax.swing.JButton btnVentas;
+    public static javax.swing.JButton btnCaja;
+    public static javax.swing.JButton btnCerrar;
+    public static javax.swing.JButton btnCompras;
+    public static javax.swing.JButton btnEgresos;
+    public static javax.swing.JButton btnIngresos;
+    public static javax.swing.JButton btnProductos;
+    public static javax.swing.JButton btnVentas;
     public static javax.swing.JDesktopPane escritorio;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JToolBar.Separator jSeparator1;
@@ -373,10 +414,11 @@ public class Menu_IU extends javax.swing.JFrame {
     private javax.swing.JToolBar.Separator jSeparator4;
     private javax.swing.JToolBar.Separator jSeparator5;
     private javax.swing.JPopupMenu.Separator jSeparator6;
+    private javax.swing.JToolBar.Separator jSeparator7;
     private javax.swing.JToolBar jToolBar1;
-    private javax.swing.JMenu menu_caja;
-    private javax.swing.JMenu menu_compras;
-    private javax.swing.JMenu menu_inventario;
+    public static javax.swing.JMenu menu_caja;
+    public static javax.swing.JMenu menu_compras;
+    public static javax.swing.JMenu menu_inventario;
     private javax.swing.JMenuItem menu_item_categoria;
     private javax.swing.JMenuItem menu_item_composicion;
     private javax.swing.JMenuItem menu_item_marca;
@@ -385,7 +427,7 @@ public class Menu_IU extends javax.swing.JFrame {
     private javax.swing.JMenuItem menu_item_tipoUsuario;
     private javax.swing.JMenuItem menu_item_turno;
     private javax.swing.JMenuItem menu_item_usuario;
-    private javax.swing.JMenu menu_mantenimiento;
-    private javax.swing.JMenu menu_ventas;
+    public static javax.swing.JMenu menu_mantenimiento;
+    public static javax.swing.JMenu menu_ventas;
     // End of variables declaration//GEN-END:variables
 }

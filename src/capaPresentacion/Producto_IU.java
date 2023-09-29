@@ -970,7 +970,7 @@ public class Producto_IU extends javax.swing.JInternalFrame {
 
     private void txtDigemiFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtDigemiFocusLost
         // TODO add your handling code here:
-        txtDigemi.setBackground(Color.yellow);
+        txtDigemi.setBackground(Color.white);
     }//GEN-LAST:event_txtDigemiFocusLost
 
     private void txtProductoFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtProductoFocusGained

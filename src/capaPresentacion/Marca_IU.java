@@ -316,6 +316,7 @@ public class Marca_IU extends javax.swing.JInternalFrame {
                     exito("Se registro con éxito");
                     reporte_marcas();
                     limpiar();
+                    txtNombre.requestFocus();
 
                 } else {
                     error("Tienes problemas al registrar");
