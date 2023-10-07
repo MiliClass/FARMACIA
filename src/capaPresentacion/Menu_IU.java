@@ -65,7 +65,12 @@ public class Menu_IU extends javax.swing.JFrame {
         menu_item_medida = new javax.swing.JMenuItem();
         menu_item_producto = new javax.swing.JMenuItem();
         menu_item_composicion = new javax.swing.JMenuItem();
+        jSeparator8 = new javax.swing.JPopupMenu.Separator();
+        menu_item_proveedor = new javax.swing.JMenuItem();
+        menu_item_cuentas_bancarias = new javax.swing.JMenuItem();
         menu_compras = new javax.swing.JMenu();
+        menu_item_compras = new javax.swing.JMenuItem();
+        menu_item_reporte_compra_varios = new javax.swing.JMenuItem();
         menu_inventario = new javax.swing.JMenu();
         menu_ventas = new javax.swing.JMenu();
         menu_caja = new javax.swing.JMenu();
@@ -161,6 +166,7 @@ public class Menu_IU extends javax.swing.JFrame {
         jToolBar1.add(btnCerrar);
 
         menu_mantenimiento.setText("MANTENIMIENTO");
+        menu_mantenimiento.setEnabled(false);
 
         menu_item_tipoUsuario.setText("Tipo de usuarios");
         menu_item_tipoUsuario.addActionListener(new java.awt.event.ActionListener() {
@@ -226,11 +232,50 @@ public class Menu_IU extends javax.swing.JFrame {
             }
         });
         menu_mantenimiento.add(menu_item_composicion);
+        menu_mantenimiento.add(jSeparator8);
+
+        menu_item_proveedor.setText("Proveedor");
+        menu_item_proveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menu_item_proveedorActionPerformed(evt);
+            }
+        });
+        menu_mantenimiento.add(menu_item_proveedor);
+
+        menu_item_cuentas_bancarias.setText("Cuentas Bancarias");
+        menu_item_cuentas_bancarias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menu_item_cuentas_bancariasActionPerformed(evt);
+            }
+        });
+        menu_mantenimiento.add(menu_item_cuentas_bancarias);
 
         jMenuBar1.add(menu_mantenimiento);
 
         menu_compras.setText("COMPRAS");
         menu_compras.setEnabled(false);
+        menu_compras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menu_comprasActionPerformed(evt);
+            }
+        });
+
+        menu_item_compras.setText("Realizar Compras");
+        menu_item_compras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menu_item_comprasActionPerformed(evt);
+            }
+        });
+        menu_compras.add(menu_item_compras);
+
+        menu_item_reporte_compra_varios.setText("Reporte de Compras Varios");
+        menu_item_reporte_compra_varios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menu_item_reporte_compra_variosActionPerformed(evt);
+            }
+        });
+        menu_compras.add(menu_item_reporte_compra_varios);
+
         jMenuBar1.add(menu_compras);
 
         menu_inventario.setText("INVENTARIO");
@@ -363,6 +408,55 @@ public class Menu_IU extends javax.swing.JFrame {
          System.exit(0);
     }//GEN-LAST:event_btnCerrarActionPerformed
 
+    private void menu_item_proveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_item_proveedorActionPerformed
+        // TODO add your handling code here:
+         Proveedor_IU frame= new Proveedor_IU();
+        escritorio.add(frame);
+        Dimension desKtopSize= escritorio.getSize();
+        Dimension FrameSize= frame.getSize();
+        frame.setLocation((desKtopSize.width - FrameSize.width)/2, (desKtopSize.height - FrameSize.height)/2);
+        
+        frame.show();
+    }//GEN-LAST:event_menu_item_proveedorActionPerformed
+
+    private void menu_item_cuentas_bancariasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_item_cuentas_bancariasActionPerformed
+        // TODO add your handling code here:
+         CuentasBancariasProveedor_IU frame= new CuentasBancariasProveedor_IU();
+        escritorio.add(frame);
+        Dimension desKtopSize= escritorio.getSize();
+        Dimension FrameSize= frame.getSize();
+        frame.setLocation((desKtopSize.width - FrameSize.width)/2, (desKtopSize.height - FrameSize.height)/2);
+        
+        frame.show();
+    }//GEN-LAST:event_menu_item_cuentas_bancariasActionPerformed
+
+    private void menu_item_comprasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_item_comprasActionPerformed
+        // TODO add your handling code here:
+        Compra_IU frame= new Compra_IU();
+        escritorio.add(frame);
+        Dimension desKtopSize= escritorio.getSize();
+        Dimension FrameSize= frame.getSize();
+        frame.setLocation((desKtopSize.width - FrameSize.width)/2, (desKtopSize.height - FrameSize.height)/2);
+        
+        frame.show();
+    }//GEN-LAST:event_menu_item_comprasActionPerformed
+
+    private void menu_comprasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_comprasActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_menu_comprasActionPerformed
+
+    private void menu_item_reporte_compra_variosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_item_reporte_compra_variosActionPerformed
+        // TODO add your handling code here:
+         ReporteComprasVarios frame= new ReporteComprasVarios();
+        escritorio.add(frame);
+        Dimension desKtopSize= escritorio.getSize();
+        Dimension FrameSize= frame.getSize();
+        frame.setLocation((desKtopSize.width - FrameSize.width)/2, (desKtopSize.height - FrameSize.height)/2);
+        
+        frame.show();
+    }//GEN-LAST:event_menu_item_reporte_compra_variosActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -415,15 +509,20 @@ public class Menu_IU extends javax.swing.JFrame {
     private javax.swing.JToolBar.Separator jSeparator5;
     private javax.swing.JPopupMenu.Separator jSeparator6;
     private javax.swing.JToolBar.Separator jSeparator7;
+    private javax.swing.JPopupMenu.Separator jSeparator8;
     private javax.swing.JToolBar jToolBar1;
     public static javax.swing.JMenu menu_caja;
     public static javax.swing.JMenu menu_compras;
     public static javax.swing.JMenu menu_inventario;
     private javax.swing.JMenuItem menu_item_categoria;
     private javax.swing.JMenuItem menu_item_composicion;
+    private javax.swing.JMenuItem menu_item_compras;
+    private javax.swing.JMenuItem menu_item_cuentas_bancarias;
     private javax.swing.JMenuItem menu_item_marca;
     private javax.swing.JMenuItem menu_item_medida;
     private javax.swing.JMenuItem menu_item_producto;
+    private javax.swing.JMenuItem menu_item_proveedor;
+    private javax.swing.JMenuItem menu_item_reporte_compra_varios;
     private javax.swing.JMenuItem menu_item_tipoUsuario;
     private javax.swing.JMenuItem menu_item_turno;
     private javax.swing.JMenuItem menu_item_usuario;

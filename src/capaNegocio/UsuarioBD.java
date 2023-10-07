@@ -58,7 +58,7 @@ public class UsuarioBD {
 
     public boolean registrarUsuario(Usuario u) {
         boolean rpta = false;
-        sql = "INSERT INTO usuario(uDni,uNombre,uApellido,uDireccion,uClave,uCelular,idtipousuario,tienda) VALUES (?,?,?,?,?,?,?,?)";
+        sql = "INSERT INTO usuario(uDni,uNombre,uApellido,uDireccion,uClave,uCelular,idtipousuario,tienda) VALUES(?,?,?,?,?,?,?,?)";
         try {
             PreparedStatement pst = cn.prepareStatement(sql);
             pst.setString(1, u.getuDni());
